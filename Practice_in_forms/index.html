@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        
+    </head>
+    <body>
+        <form>
+            <!-- The form element goes here-->
+            <label for="name">Name:</label>
+            <!-- The for attribute associaties the label with the user input-->
+            <input type="text" id="name" name="name" placeholder="Enter your Name">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password">
+
+            <label>Choose your preferred payment method:</label>
+            <input type="Radio" id="credit card" name="payment method" value="credit card">
+            <label for="Credit Card">Credit Card</label>
+
+            <input type="Radio" id="paypal" name="payment method" value="paypal">
+            <label for="paypal">PayPal</label>
+
+            <input type="Radio" id="bitcoin" name="payment method" value="bitcoin">
+            <label for="bitcoin">Bitcoin</label>
+
+            <label>Intrests:</label>
+            <input type="checkbox" id="music" name="intrest" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="sports" name="intrest" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="reading" name="intrest" value="reading">
+            <label for="reading">Reading</label>
+
+            <!-- Submit button-->
+            <button type="submit">Submit</button>
+
+            <!-- Error handling-->
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" aria-invalid="true" name="name" placeholder="Enter your name">
+
+            <!-- ARIA  roles and attributes-->
+            <label for="password">Password:</label>
+            <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            aria-describeby="password-hint">
+            <div id="password-hint">
+                Password must be atleast 8 charcters long
+            </div>
+
+            <!-- Fieldset and lengend-->
+
+            <fieldset>
+                <legend>Adress Information</legend>
+
+                <!-- Adress fields go here-->
+            </fieldset>
+
+        </form>
+    </body>
+</html>
