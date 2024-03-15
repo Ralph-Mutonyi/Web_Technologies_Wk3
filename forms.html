@@ -1,19 +1,60 @@
-<!--
-    Gather the following information using the relevent form elements:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale = 1.0">
+        <meta keywords="">
+    </head>
+    <body>
+        <h1>Welcome to Power Learn Project</h1>
+    
+        <forms>
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name!">
 
-Name
-Date of Birth
-Gender
-Address
-Telephone
-Email Address
-Course
-The form should have two buttons:
+            <label for="date">When were your born?</label>
+            <input type="date" placeholder="Enter your Date of Birth" id="dateofbirth" name="date">
 
-Register
-Cancel
-All the form elements are not optional.
+            <label for="gender">What is your gender?</label>
+            
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+           
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="prefernot" name="gender" value="prefernot">
+            <label for="prefernot">Prefer not to say</label>
+            
 
-Incorporate appropriate labels for the form elements.
--->
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="adress"> What is your adress?</label>
+                <input type="text" placeholder="Enter your adress here" id="adress" name="adress" value="Home adress">
 
+                <label for="telephone"> What is your telephone number?</label>
+                <input type="telephone" placeholder="Enter your telephone" id="telephone" name="telephone" value="telephone Number">
+            </fieldset>
+
+            <label for="course">Select your preffered Course</label>
+            
+            <input type="radio" id="Web Technologies" name="course" value="Web Technologies" >
+            <label for="Web Technologies">Web Technologies</label>
+
+            <input type="radio" id="python" name="course" value="python" >
+            <label for="python">Python Programming</label>
+
+            <input type="radio" id="dart" name="course" value="dart" >
+            <label for="dart">Dart With Flutter</label>
+
+            <input type="radio" id="sql" name="course" value="sql" >
+            <label for="sql">Database Management with SQL</label>
+
+            <button type="submit">Register</button>
+            <button type="reset">Cancel</button>
+        </forms>
+
+    </body>
+</html>
