@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 6px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{ /* Pseudo element allowing you to insert content before the content of selected element */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    width: calc(100% / 2 -20px);
+    margin: 20px 0 12px 0;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.user-details .input-box .details .gender .course-select{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
