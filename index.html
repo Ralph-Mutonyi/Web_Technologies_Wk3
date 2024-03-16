@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STUDENT REGISTRATION FORM</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Welcome to Power learn project</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details" for="name">Full Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required name="name">
+                    </div>  
+                    <div class="input-box">
+                        <label class="details" for="date">Date of Birth:</label>
+                        <input type="date"  id="date" placeholder="D.O.B" required name="date">
+                    </div> 
+                    <div class="gender-details">
+                        <span class="gender">Gender</span>
+                        <div class="category">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+
+                                <input type="radio" id="prefer not" name="gender" value="prefer not">
+                                <label for="prefer not">Prefer not to say</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="adress"  class="details">Adress:</label>
+                        <input type="text" placeholder="Home/location" required name="adress" id="adress">
+                    </div> 
+                    <div class="input-box">
+                        <label for="phone no" class="details">Telephone Number:</span>
+                        <input type="tel" placeholder="Enter Phone Number" required id="phone no" >
+                    </div> 
+                    <div class="course-select">
+                        <label for="course">Select a course:</label>
+                        <select name="course" id="course">
+                            <option value="Web technologies">Web Technologies</option>
+                            <option value="python">Python Programming</option>
+                            <option value="dart">Dart with flutter</option>
+                            <option value="sql">Database Management with SQL</option>
+                            <option value="ENTPD">Enterprenuership and Personal Development</option>
+                        </select>
+                    </div>
+                    <div class="button-register">
+                        <input type="submit" value="Register">
+                    </div>
+                    <div class="button-cancel">
+                        <input type="button" value="Cancel">
+                    </div>
+                </div>
+            </form>       
+        </div>
+    </body>
+</html>
