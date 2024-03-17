@@ -19,6 +19,8 @@ body{
     background: #fff;
     padding: 25px 30px;
     border-radius: 6px;
+
+
 }
 .container .title{
     font-size: 25px;
@@ -65,24 +67,65 @@ form .user-details .input-box{
 .user-details .input-box input:valid{
     border-color: #9b5956;
 }
-form .gender-details .gender-title{
-    font-size: 20px;
-    font-weight: 500;
+.gender-details{
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+    
 }
-form .gender-details .category{
-    display:flex;
-    width: 80%;
-    margin: 14px 0;
-    justify-content: space-between;
-}
+.gender-details .category{
+    display: flex;
+    flex-direction: row;
 
+}
+.gender-details input[type="radio"]{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    outline: none;
+    cursor: pointer;
+
+}
+.gender-details input[type="radio"]:checked{
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154));
+
+
+}
+.gender-details input[type="radio"] + label{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.gender-details .gender-title{
+    font-weight: 100%;
+    
+}
+.container .user-details #course{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+}
 form .button-register{
     height: 30px;
-    margin: 1px 0;
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
 }
 form .button-cancel{
     height: 30px;
     margin: 1px 0;
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
 }
 form .button-register input{
     height: 100%;
