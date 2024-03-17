@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 6px;
+
+
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{ /* Pseudo element allowing you to insert content before the content of selected element */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+    
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+}
+.user-details .input-box .details .gender{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b5956;
+}
+.gender-details{
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+    
+}
+.gender-details .category{
+    display: flex;
+    flex-direction: row;
+
+}
+.gender-details input[type="radio"]{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    outline: none;
+    cursor: pointer;
+
+}
+.gender-details input[type="radio"]:checked{
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154));
+
+
+}
+.gender-details input[type="radio"] + label{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.gender-details .gender-title{
+    font-weight: 100%;
+    
+}
+.container .user-details #course{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+}
+form .button-register{
+    height: 30px;
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+}
+form .button-cancel{
+    height: 30px;
+    margin: 1px 0;
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+}
+form .button-register input{
+    height: 100%;
+    width: 120%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background:linear-gradient(135deg, #1BDA5E ,#07E91B )
+
+
+}
+form .button-cancel input{
+    height: 100%;
+    width: 120%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #E70C1C, #E90A07)
+}
+form .button-register .button-cancel input:hover{
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+}
+
+

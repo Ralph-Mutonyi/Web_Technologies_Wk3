@@ -1,53 +1,63 @@
-*{
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
-body{
+
+/* Styling for the body */
+body {
     display: flex;
     height: 100vh;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
-
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669), rgb(49, 152, 154));
 }
-.container{
+
+/* Container styling */
+.container {
     max-width: 700px;
     width: 100%;
     background: #fff;
     padding: 25px 30px;
     border-radius: 6px;
-
-
 }
-.container .title{
+
+/* Title styling */
+.container .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
 }
-.container .title::before{ /* Pseudo element allowing you to insert content before the content of selected element */
+
+/* Pseudo element before the title */
+.container .title::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     height: 3px;
     width: 30px;
-    background:linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669), rgb(49, 152, 154));
 }
-.container form .user-details{
+
+/* User details container */
+.container .user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 12px 0;
 }
-form .user-details .input-box{
-    width: calc(100% / 2 -20px);
+
+/* Input box styling */
+.user-details .input-box {
+    width: calc(100% / 2 - 20px);
     margin-bottom: 15px;
-    
 }
-.user-details .input-box input{
+
+/* Styling for input elements */
+.user-details .input-box input {
     height: 45px;
     width: 100%;
     outline: none;
@@ -58,29 +68,38 @@ form .user-details .input-box{
     border-bottom-width: 2px;
     transition: all 0.5s ease;
 }
-.user-details .input-box .details .gender{
+
+/* Styling for labels associated with gender input */
+.user-details .input-box .details .gender {
     font-weight: 500;
     margin-bottom: 5px;
     display: block;
 }
+
+/* Styling for focused and valid input */
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:valid {
     border-color: #9b5956;
 }
-.gender-details{
-    width: calc(100% / 2 -20px);
-    margin-bottom: 15px;
+
+/* Gender details container */
+.gender-details {
+    width: 100%;
+    margin-top: 15px; /* Adjusted margin top */
     
 }
-.gender-details .category{
+
+/* Category container for gender radio buttons */
+.gender-details .category {
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
 
 }
-.gender-details input[type="radio"]{
+
+/* Styling for gender radio buttons */
+.gender-details input[type="radio"] {
     margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -90,22 +109,28 @@ form .user-details .input-box{
     border: 2px solid #333;
     outline: none;
     cursor: pointer;
-
+    
 }
-.gender-details input[type="radio"]:checked{
-    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154));
 
-
+/* Styling for checked state of gender radio buttons */
+.gender-details input[type="radio"]:checked {
+    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669), rgb(49, 152, 154));
 }
-.gender-details input[type="radio"] + label{
+
+/* Styling for labels associated with gender radio buttons */
+.gender-details input[type="radio"] + label {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.gender-details .gender-title{
-    font-weight: 100%;
+
+/* Gender title styling */
+.gender-details .gender-title {
+    font-weight: bold; /* Corrected font weight */
     
 }
-.container .user-details #course{
+
+/* Styling for course input */
+.container .user-details #course {
     height: 45px;
     width: 100%;
     outline: none;
@@ -116,20 +141,27 @@ form .user-details .input-box{
     border-bottom-width: 2px;
     transition: all 0.5s ease;
 }
-form .button-register{
+
+/* Styling for register button */
+form .button-register {
     height: 30px;
-    width: calc(100% / 2 -20px);
+    width: calc(100% / 2 - 20px);
     margin-bottom: 15px;
 }
-form .button-cancel{
+
+/* Styling for cancel button */
+form .button-cancel {
     height: 30px;
-    margin: 1px 0;
-    width: calc(100% / 2 -20px);
+    width: calc(100% / 2 - 20px);
+    margin: 1px 0; /* Adjusted margin */
     margin-bottom: 15px;
 }
-form .button-register input{
+
+/* Styling for register and cancel buttons */
+form .button-register input,
+form .button-cancel input {
     height: 100%;
-    width: 120%;
+    width: 100%; /* Adjusted width */
     outline: none;
     color: #fff;
     border: none;
@@ -137,24 +169,14 @@ form .button-register input{
     font-weight: 400;
     border-radius: 5px;
     letter-spacing: 1px;
-    background:linear-gradient(135deg, #1BDA5E ,#07E91B )
-
-
-}
-form .button-cancel input{
-    height: 100%;
-    width: 120%;
-    outline: none;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #E70C1C, #E90A07)
-}
-form .button-register .button-cancel input:hover{
-    background: linear-gradient(135deg, rgba(208, 48, 9, 0.669),rgb(49, 152, 154))
 }
 
+/* Styling for register button hover state */
+form .button-register input:hover {
+    background: linear-gradient(135deg, #1BDA5E, #07E91B);
+}
 
+/* Styling for cancel button hover state */
+form .button-cancel input:hover {
+    background: linear-gradient(135deg, #E70C1C, #E90A07);
+}
