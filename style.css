@@ -91,8 +91,8 @@ body {
 
 /* Category container for gender radio buttons */
 .gender-details .category {
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     margin-bottom: 15px;
 
 }
@@ -109,6 +109,8 @@ body {
     border: 2px solid #333;
     outline: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
     
 }
 
@@ -163,7 +165,7 @@ form .button-cancel input {
     height: 100%;
     width: 100%; /* Adjusted width */
     outline: none;
-    color: #0000;
+    color: black;
     border: none;
     font-size: 18px;
     font-weight: 400;
